@@ -34,11 +34,11 @@
     },
     {
       "name": "NFT API",
-      "url": "https://docs.reservoir.tools/docs/marketplace-toolkit"
+      "url": "https://docs.reservoir.tools/reference/what-is-reservoir"
     },
     {
       "name": "Token API",
-      "url": "references/api"
+      "url": "references/token-api"
     }
   ],
   "navigation": [
@@ -98,7 +98,10 @@
     },
     {
       "group": "Token API",
-      "pages": ["references/api/token-api"]
+      "pages": [
+        "references/token-api/token-api",
+        "references/token-api/uniswap-contracts"
+      ]
     }
   ],
   "footerSocials": {
