@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Relay",
+  "name": "Reservoir",
   "logo": {
     "dark": "/logo/relay-white.svg",
     "light": "/logo/relay-black.svg"
   },
-  "favicon": "/favicon.png",
+  "favicon": "/icon.png",
   "colors": {
     "primary": "#9e7aff",
     "light": "#b194ff",
@@ -19,147 +19,86 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:support@relay.link"
+      "url": "/support"
     }
   ],
-  "topbarCtaButton": {
-    "name": "Try Relay",
-    "url": "https://www.relay.link/"
+
+  "primaryTab": {
+    "name": "Home"
   },
+
   "tabs": [
     {
-      "name": "API Reference",
+      "name": "Relay API",
+      "url": "https://docs.relay.link/references/api/overview"
+    },
+    {
+      "name": "NFT API",
+      "url": "https://docs.reservoir.tools/docs/marketplace-toolkit"
+    },
+    {
+      "name": "Token API",
       "url": "references/api"
-    },
-    {
-      "name": "SDK Reference",
-      "url": "references/sdk"
-    },
-    {
-      "name": "UI Kit",
-      "url": "references/relay-kit"
     }
   ],
   "navigation": [
     {
       "group": "Introduction",
-      "pages": ["what-is-relay"]
+      "pages": ["what-is-reservoir"]
+    },
+
+    {
+      "group": "Products",
+      "pages": [
+        {
+          "group": "Relay",
+          "pages": ["relay/relay-overview", "relay/relay-docs"]
+        },
+        {
+          "group": "Reservoir Swap",
+          "pages": ["reservoir-swap/reservoir-swap-overview"]
+        },
+        {
+          "group": "Reservoir NFT",
+          "pages": [
+            "reservoir-nft/reservoir-nft-overview",
+            "reservoir-nft/reservoir-nft-docs"
+          ]
+        }
+      ]
     },
     {
       "group": "Use Cases",
-      "pages": ["use-cases/instant-bridging", "use-cases/cross-chain-execution"]
-    },
-    {
-      "group": "Guides",
       "pages": [
-        "guides/bridging",
-        "guides/swapping",
-        "guides/calling",
-        "guides/solana",
-        "guides/testnet",
         {
-          "group": "Advanced",
+          "group": "Chains",
           "pages": [
-            "guides/just-in-time-gas",
-            "guides/deep-linking",
-            "guides/deposit-address"
+            "use-cases/chains-overview",
+            "use-cases/instant-bridging-and-onboarding",
+            "use-cases/NFT-infrastructure",
+            "use-cases/DEX-infrastructure"
+          ]
+        },
+        {
+          "group": "Apps & Wallets",
+          "pages": [
+            "use-cases/apps-and-wallets-overview",
+            "use-cases/cross-chain-swaps-and-bridging",
+            "use-cases/cross-chain-execution",
+            "use-cases/NFT-data",
+            "use-cases/Token-data"
           ]
         }
       ]
     },
-    {
-      "group": "How it Works",
-      "pages": [
-        "how-it-works/relay-protocol",
-        "how-it-works/the-reservoir-relayer",
-        "how-it-works/contract-compatibility",
-        "how-it-works/swapping",
-        "how-it-works/fees",
-        "how-it-works/refunds",
-        "how-it-works/trade-types",
-        "how-it-works/surplus-and-shortage"
-      ]
-    },
+
     {
       "group": "Resources",
-      "pages": [
-        "resources/supported-chains",
-        "resources/contract-addresses",
-        "resources/bounties",
-        "resources/brand-assets"
-      ]
+      "pages": ["resources/support", "resources/brand-assets"]
     },
     {
-      "group": "API Reference",
-      "pages": [
-        "references/api/overview",
-        "references/api/step-execution",
-        "references/api/handling-errors",
-        "references/api/get-chains",
-        "references/api/get-config",
-        "references/api/get-intents-status-v2",
-        "references/api/get-requests",
-        "references/api/get-token-price",
-        "references/api/get-currencies",
-        "references/api/get-price",
-        "references/api/get-quote",
-        "references/api/swap-multi-input",
-        "references/api/transactions-index",
-        {
-          "group": "Deprecated",
-          "pages": [
-            "references/api/execute-call",
-            "references/api/execute-bridge",
-            "references/api/execute-swap",
-            "references/api/get-intents-status"
-          ]
-        }
-      ]
-    },
-    {
-      "group": "SDK Reference",
-      "pages": [
-        "references/sdk/getting-started",
-        "references/sdk/createClient",
-        {
-          "group": "Actions",
-          "pages": [
-            "references/sdk/actions/getSolverCapacity",
-            "references/sdk/actions/getPrice",
-            "references/sdk/actions/getQuote",
-            "references/sdk/actions/execute"
-          ]
-        },
-        "references/sdk/adapters",
-        "references/sdk/api-types"
-      ]
-    },
-    {
-      "group": "RelayKit",
-      "pages": [
-        "references/relay-kit/overview",
-        {
-          "group": "Hooks",
-          "pages": [
-            "references/relay-kit/hooks/getting-started",
-            "references/relay-kit/hooks/usePrice",
-            "references/relay-kit/hooks/useQuote",
-            "references/relay-kit/hooks/useRelayChains",
-            "references/relay-kit/hooks/useRequests",
-            "references/relay-kit/hooks/useTokenList"
-          ]
-        },
-        {
-          "group": "UI",
-          "pages": [
-            "references/relay-kit/ui/getting-started",
-            "references/relay-kit/ui/relay-kit-provider",
-            "references/relay-kit/ui/swap-widget",
-            "references/relay-kit/ui/theming",
-            "references/relay-kit/ui/troubleshooting"
-          ]
-        }
-      ]
+      "group": "Token API",
+      "pages": ["references/api/token-api"]
     }
   ],
   "footerSocials": {
@@ -177,23 +116,5 @@
       "apiKey": "phc_bidXwDZgxGlWqfNtx8fhLESozcfupLUETfYB306Apmc",
       "apiHost": "https://posthog.reservoir.tools"
     }
-  },
-  "redirects": [
-    {
-      "source": "/references/sdk/bridging/fetching-a-quote",
-      "destination": "/guides/bridging"
-    },
-    {
-      "source": "/references/sdk/bridging/executing-a-bridge",
-      "destination": "/guides/bridging"
-    },
-    {
-      "source": "/references/sdk/swapping/fetching-a-quote",
-      "destination": "/guides/swapping"
-    },
-    {
-      "source": "/references/sdk/swapping/executing-a-swap",
-      "destination": "/guides/swapping"
-    }
-  ]
+  }
 }
