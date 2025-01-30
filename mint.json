@@ -30,11 +30,12 @@
   "tabs": [
     {
       "name": "Relay API",
-      "url": "https://docs.relay.link/references/api/overview"
+      "url": "references/relay-api"
     },
     {
       "name": "NFT API",
-      "url": "https://docs.reservoir.tools/reference/what-is-reservoir"
+      "url": "api-reference",
+      "openapi": "https://docs.reservoir.tools/openapi/658f0c1757ca05007133eb15"
     },
     {
       "name": "Token API",
@@ -98,9 +99,34 @@
     },
     {
       "group": "Token API",
+      "pages": ["references/token-api/token-api", "references/token-api/test1"]
+    },
+    {
+      "group": "Relay Docs",
       "pages": [
-        "references/token-api/token-api",
-        "references/token-api/uniswap-contracts"
+        "references/relay-api/token-api",
+        "references/relay-api/test1",
+        {
+          "group": "API Reference",
+          "pages": [
+            "references/relay-api/test-page",
+            "references/relay-api/uniswap-contracts"
+          ]
+        },
+        {
+          "group": "SDK Reference",
+          "pages": [
+            "references/relay-api/token-api",
+            "references/relay-api/uniswap-contracts"
+          ]
+        },
+        {
+          "group": "UI Kit",
+          "pages": [
+            "references/relay-api/token-api",
+            "references/relay-api/uniswap-contracts"
+          ]
+        }
       ]
     }
   ],
