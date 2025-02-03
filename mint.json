@@ -57,7 +57,10 @@
         },
         {
           "group": "Reservoir Swap",
-          "pages": ["reservoir-swap/reservoir-swap-overview"]
+          "pages": [
+            "reservoir-swap/reservoir-swap-overview",
+            "reservoir-swap/uniswap-contracts"
+          ]
         },
         {
           "group": "Reservoir NFT",
