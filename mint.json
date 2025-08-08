@@ -120,5 +120,15 @@
       "apiKey": "phc_bidXwDZgxGlWqfNtx8fhLESozcfupLUETfYB306Apmc",
       "apiHost": "https://posthog.reservoir.tools"
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "https://docs.reservoir.tools",
+      "destination": "https://docs.relay.link"
+    },
+    {
+      "source": "https://docs.reservoir.tools/*",
+      "destination": "https://docs.relay.link/*"
+    }
+  ]
 }
