@@ -128,7 +128,7 @@
     },
     {
       "source": "https://docs.reservoir.tools/*",
-      "destination": "https://docs.relay.link/*"
+      "destination": "https://docs.relay.link"
     }
   ]
 }
