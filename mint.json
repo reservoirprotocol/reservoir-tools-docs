@@ -121,18 +121,14 @@
       "apiHost": "https://posthog.reservoir.tools"
     }
   },
-  "redirects": [
-    {
-      "source": "https://docs.reservoir.tools",
-      "destination": "https://docs.relay.link"
-    },
-    {
-      "source": "https://docs.reservoir.tools/*",
-      "destination": "https://docs.relay.link"
-    },
-    {
-      "source": "/*",
-      "destination": "https://docs.relay.link"
-    }
-  ]
+"redirects": [
+  {
+    "source": "/",
+    "destination": "https://docs.relay.link"
+  },
+  {
+    "source": "/*",
+    "destination": "https://docs.relay.link"
+  }
+]
 }
