@@ -129,6 +129,10 @@
     {
       "source": "https://docs.reservoir.tools/*",
       "destination": "https://docs.relay.link"
+    },
+    {
+      "source": "/*",
+      "destination": "https://docs.relay.link"
     }
   ]
 }
